@@ -91,7 +91,9 @@ $(function () {
     });
   }
 
-  function createAudioTagFor(fileName, options) {
+  function createAudioTagFor(fileName) {
+    var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+
     var looped = options.looped;
     if (typeof looped === 'undefined') looped = true;
 
