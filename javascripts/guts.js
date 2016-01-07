@@ -62,7 +62,7 @@ $(function () {
     var userSlashRepo = repo.replace(/.*github.com[\/:](.*?)(\.git)?$/, '$1');
     return {
       url: 'https://api.github.com/repos/' + userSlashRepo + '/commits?per_page=100',
-      hash_tag: '#' + userSlashRepo
+      hashTag: '#' + userSlashRepo
     };
   }
 
@@ -134,7 +134,7 @@ $(function () {
       if (event.keyCode === 13) {
         var repo = commitsLink($(this).val());
 
-        window.history.pushState(null, null, "#(repo.hash_tag)");
+        window.history.pushState(null, null, '' + repo.hashTag);
         commitsFetch = $.ajax(repo.url, { dataType: 'jsonp' });
 
         $('#falcon_fly').prop('volume', volume()).get(0).play();
