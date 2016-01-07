@@ -1,1 +1,4 @@
 stylesheets/.sass-cache
+.idea
+gh-pages
+node_modules
