@@ -132,13 +132,13 @@ $(function () {
 
     $('input').keyup(function (event) {
       if (event.keyCode === 13) {
-        var repo = commitsLink($(undefined).val());
+        var repo = commitsLink($(this).val());
 
         window.history.pushState(null, null, "#(repo.hash_tag)");
         commitsFetch = $.ajax(repo.url, { dataType: 'jsonp' });
 
         $('#falcon_fly').prop('volume', volume()).get(0).play();
-        $(undefined).parent().addClass('zoomed');
+        $(this).parent().addClass('zoomed');
       }
     });
 
