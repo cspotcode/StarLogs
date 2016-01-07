@@ -69,7 +69,7 @@ $(function () {
   function getRepoUrlFromHash() {
     var match = window.location.hash.match(/#(.*?)\/(.*?)$/);
     if (match) {
-      return "https://api.github.com/repos/#(match.1)/#(match.2)/commits";
+      return 'https://api.github.com/repos/' + match[1] + '/' + match[2] + '/commits';
     }
   }
 
