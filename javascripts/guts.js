@@ -97,7 +97,8 @@ $(function () {
     var looped = options.looped;
     if (typeof looped === 'undefined') looped = true;
 
-    var sourcePrefix = window.location.hostname == 'localhost' ? '' : 'https://dl.dropboxusercontent.com/u/362737/starlogs.net/';
+    // Can redirect to another host for the big assets
+    var sourcePrefix = '';
 
     var tag = $('<audio>', { id: fileName, loop: looped });
 
