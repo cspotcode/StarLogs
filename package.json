@@ -1,0 +1,18 @@
+{
+  "name": "starlogs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "One day in a galaxy far, far away… someone might want to read your project history.",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-cli": "^6.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cspotcode/StarLogs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cspotcode/StarLogs/issues"
+  },
+  "homepage": "https://github.com/cspotcode/StarLogs#readme"
+}
